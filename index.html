@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest formulario</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="formulario">
+            <div class="informacoes">
+                <h1>FICOU COM DÚVIDA? <br>
+                    NOS MANDE UMA MENSAGEM!</h1>
+                <p>caso tenha ficado com qualquer dúvida  <br> nos mandar uma mensagem e <br> entraremos em contato em menos
+                    de 24h.</p>
+            </div>
+
+            <div class="conteudo">
+                <form action="/index.html" method="get" enctype="multipart/form-data" id="form" class="form">
+                    <div class="input-de-controle">
+                        <input type="text" name="nome" id="nome" placeholder="Nome completo *">
+                        <div class="erro"></div>
+                    </div>
+                    <br>
+                    <div class="input-de-controle">
+                        <input type="text" name="email" id="email" placeholder="Email *">
+                        <div class="erro"></div>
+                    </div>
+                    <br>
+                    <div class="input-de-controle">
+                        <input type="text" name="celular" id="celular" placeholder="Telefone *">
+                        <div class="erro"></div>
+                    </div>
+                    <br>
+                    <div class="input-de-controle">
+                        <textarea name="texto" id="texto" placeholder="Mensagem *" cols="40" rows="5"></textarea>
+                        <div class="erro"></div>
+                    </div>
+                    <p class="texto-obrigatorio">*campos obrigatórios</p>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/formulario.js"></script>
+</body>
+
+</html>

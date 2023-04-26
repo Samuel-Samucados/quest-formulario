@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
+body {
+    background: url(../images/bg-repeat.jpg);
+    background-size: 1920px 1080px;
+    background-repeat: repeat;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.informacoes {
+    position: relative;
+    right: 10%;
+    
+}
+
+h1 {
+    color: white;
+    font-weight: 900;
+    line-height: 23px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+p {
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+#form {
+    width: 340px;
+    height: 378px;
+    margin: 10vh auto 0 auto;
+    padding: 20px;
+    background: #FFFFFF;
+    font-size: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+#form .texto-obrigatorio {
+    font-size: 1rem;
+}
+
+#form button {
+    position: absolute;
+    width: 298.01px;
+    height: 41.13px;
+    color: white;
+    background: #3CCC87;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+.input-de-controle {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-de-controle input {
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.input-de-controle textarea {
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.input-de-controle input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.input-de-controle textarea:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.input-de-controle.sucesso textarea {
+    border-color: #3CCC87;
+}
+
+.input-de-controle.erro textarea {
+    border-color: #f52e2e
+}
+
+.input-de-controle.sucesso input {
+    border-color: #3CCC87;
+}
+
+.input-de-controle.erro input {
+    border-color: #f52e2e
+}
+
+.input-de-controle .erro {
+    position: relative;
+    width: 66px;
+    height: 9px;
+    color: #f52e2e;
+    font-size: 8px;
+    line-height: 9px;
+    font-weight: 400;
+    font-style: normal;
+}
